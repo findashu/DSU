@@ -1,0 +1,39 @@
+<div class="bg-light p-5 rounded-3 mb-3">
+  <div class="container-fluid">
+    <h1 class="display-5 fw-bold">My Pofo</h1>
+    <div class="row">
+      <div class="col-md-8">
+        <p class="fs-4">Welcome to my profile. I am Ashutosh Mishra. Software
+          Engineer who's passionate about work on end to end products and teach
+          people coding.
+        </p>
+        <a class="btn btn-primary btn-lg mb-2" href="/create-project">Create
+          Project</a>
+      </div>
+      <div class="col-md-4">
+        <img class="img-fluid" src="/image/ashu.JPG" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mb-4">
+  <h2 class="text-center fw-light">Projects</h2>
+  <div class="container">
+    <div class="row">
+      {{#each projects}}
+        <div class="col-md-4 mb-2">
+          <div class="card">
+            <img src="/image/ashu.JPG" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">{{{this.title}}}</h5>
+              <p class="card-text">{{this.shortDescription}}</p>
+              <a href="/{{this.alias}}" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+
+    </div>
+  </div>
+</div>

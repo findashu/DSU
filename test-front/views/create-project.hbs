@@ -1,0 +1,35 @@
+<div class="container">
+  <h1 class="display-5 fw-bold mt-4">Create Project</h1>
+  <div class="row">
+    <div class="col-md-8">
+      <form method="post" action="/create-project">
+        <div class="mb-3">
+          <label for="title" class="form-label">Title</label>
+          <input type="text" class="form-control" id="title" name="title" />
+        </div>
+        <div class="mb-3">
+          <label for="shortDes" class="form-label">Short Description</label>
+          <input
+            type="text"
+            type="shortDescription"
+            name="shortDescription"
+            class="form-control"
+            id="shortDes"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="Des" class="form-label">Description</label>
+          <input
+            type="text"
+            type="shortDescription"
+            name="description"
+            class="form-control"
+            id="Des"
+          />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
